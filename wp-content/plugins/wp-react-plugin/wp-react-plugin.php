@@ -47,10 +47,11 @@ class WP_React_Plugin_Starter {
         wp_enqueue_style('wp-react-plugin', $css, [], $ver_css);
         wp_enqueue_script('wp-react-plugin', $js, ['wp-element'], $ver_js, true);
 
-        wp_localize_script('wp-react-plugin', 'WP_REACT_PLUGIN', [
-            'restUrl' => esc_url_raw( rest_url() ),
-            'nonce'   => wp_create_nonce('wp_rest')
-        ]);
+       	wp_localize_script('wp-react-plugin', 'WP_REACT_PLUGIN', [
+  			'restUrl' => esc_url_raw( rest_url() ),
+  			'nonce'   => wp_create_nonce('wp_rest'),
+  			'version' => '1.0.0',
+		]);
     }
 }
 
