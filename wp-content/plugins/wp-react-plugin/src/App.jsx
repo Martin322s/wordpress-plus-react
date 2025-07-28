@@ -8,7 +8,13 @@ export default function App() {
 	const [dark, setDark] = useDarkMode();
 	const [toast, setToast] = useState('');
 
-	useEffect(() => { if (count === 5) setToast('Nice! 5 clicks 🎉'); }, [count])
+	useEffect(() => { if (count === 5) setToast('Nice! 5 clicks 🎉'); }, [count]);
+
+	useEffect(() => {
+		if (!toast) return
+		const t = setTimeout(() => setToast(''), 2000)
+		return () => clearTimeout(t)
+	}, [toast])
 
 	return (
 		<div className="p-4">
