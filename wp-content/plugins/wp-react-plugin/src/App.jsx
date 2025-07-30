@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import CounterButton from './components/CounterButton.jsx';
 import useDarkMode from './hooks/useDarkMode.js';
 import Toast from './components/Toast.jsx';
+import './App.css';
 
 export default function App() {
 	const [count, setCount] = useState(0);
