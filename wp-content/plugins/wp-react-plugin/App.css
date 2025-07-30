@@ -22,3 +22,16 @@ body {
 	background: var(--color-bg);
 	color: var(--color-text);
 }
+
+.p-4 {
+	padding: 16px;
+}
+
+h2 {
+	font-size: 1.4rem;
+	margin-top: 0.5rem;
+}
+
+p {
+	line-height: 1.4;
+}
