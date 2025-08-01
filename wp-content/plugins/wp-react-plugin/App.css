@@ -64,3 +64,15 @@ code {
 	padding: 2px 4px;
 	border-radius: 4px;
 }
+
+.toast {
+	position: fixed;
+	right: 16px;
+	bottom: 16px;
+	padding: 10px 14px;
+	background: var(--color-accent);
+	color: #fff;
+	border-radius: 6px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+	animation: fadein 0.3s ease, fadeout 0.3s ease 1.7s;
+}
