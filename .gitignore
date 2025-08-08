@@ -5,10 +5,6 @@ readme.html
 xmlrpc.php
 wp-config-sample.php
 
-wp-content/uploads/
-
-!wp-content/plugins/wp-react-plugin/
-
 node_modules/
 build/
 npm-debug.log*
