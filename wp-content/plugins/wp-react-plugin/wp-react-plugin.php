@@ -16,6 +16,18 @@ class WP_React_Plugin_Starter {
         add_action('admin_enqueue_scripts', [$this, 'enqueue_admin_assets']);
     }
 
+    public function add_menu() {
+        add_menu_page(
+            __('React Demo', 'wp-react-plugin'),
+            __('React Demo', 'wp-react-plugin'),
+            'manage_options',
+            self::SLUG,
+            [$this, 'render_page'],
+            'dashicons-admin-site',
+            65
+        );
+    }
+
     
 }
 
