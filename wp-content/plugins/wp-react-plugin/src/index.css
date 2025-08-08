@@ -1,0 +1,19 @@
+:root {
+	--wp-react-primary: #3858e9;
+}
+
+#wp-react-root {
+	font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+button {
+	padding: 8px 12px;
+	border-radius: 6px;
+	border: 1px solid #d0d7de;
+	background: white;
+	cursor: pointer;
+}
+
+button:hover {
+	border-color: var(--wp-react-primary);
+}
