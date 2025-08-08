@@ -28,6 +28,10 @@ class WP_React_Plugin_Starter {
         );
     }
 
+    public function render_page() {
+        echo '<div class="wrap"><h1>React Demo</h1><div id="wp-react-root"></div></div>';
+    }
+
     
 }
 
